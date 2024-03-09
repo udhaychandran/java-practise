@@ -9,12 +9,15 @@ public class StudentArraySort {
 
 	public static void main(String[] args)
 	{
-		List<Student> student = List.of(new Student(3,"Mike"), new Student(2,"Ken"), new Student(1, "Ben"));
-		System.out.println(student);
+		List<Student> student = List.of(new Student(100,"Mike"), new Student(22,"Ken"), new Student(300, "Ben"));
+		
 		
 		ArrayList<Student> studentAl = new ArrayList<>(student);
-		Collections.sort(studentAl);
 		System.out.println(studentAl);
+		Collections.sort(studentAl);
+		System.out.println("Desc" +studentAl);
+		studentAl.sort(new AscStudentArraySort());
+		System.out.println("Asc" +studentAl);
 	}
 	
 }
