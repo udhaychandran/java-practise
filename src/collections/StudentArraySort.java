@@ -9,7 +9,8 @@ public class StudentArraySort {
 
 	public static void main(String[] args)
 	{
-		List<Student> student = List.of(new Student(100,"Mike"), new Student(22,"Ken"), new Student(300, "Ben"));
+		List<Student> student = List.of(new Student(100,"Mike"), new Student(22,"Ken"), new Student(300, "Ben"),
+				new Student(221,"Bril"), new Student(534,"Sam"));
 		
 		
 		ArrayList<Student> studentAl = new ArrayList<>(student);
