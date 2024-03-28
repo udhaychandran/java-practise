@@ -15,6 +15,7 @@ public class MapCountOccurance {
 		for (char character: characters)
 		{
 			Integer integer = occurance.get(character);
+			System.out.println("Dub:"+integer);
 			if (integer==null)
 			{
 				occurance.put(character, 1);
